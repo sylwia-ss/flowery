@@ -37,27 +37,61 @@
 
 .nav a:link {
    color: #d7e0dd;
+   text-decoration:none;
  }
  
  /* visited link */
  nav a:visited {
    color: #d7e0dd;
+   text-decoration:none;
  }
  
  /* mouse over link */
  .nav a:hover {
    color: #9aa9a4;
+   text-decoration:none;
  }
  
  /* selected link */
  .nav a:active {
    color: #e8f2ef;
+   text-decoration:none;
  }
 
+
+
+ main a:link, footer a:link {
+   color: #7a8c73;
+   text-decoration:none;
+ }
+ 
+ /* visited link */
+ main a:visited, footer a:visited {
+   color: #7a8c73;
+   text-decoration:none;
+ }
+ 
+ /* mouse over link */
+ main a:hover, footer a:hover {
+   color: #323e2d;
+   text-decoration:none;
+ }
+ 
+ /* selected link */
+ main a:active, footer a:active {
+   color: #5b6a55;
+   text-decoration:none;
+ }
+
+/* nie ma juz buttonow
 .nav-main.scrolled {
    background-color: #f6f8f8;
    box-shadow: 10px 0 20px rgb(99 99 99 / 20%);
-}
+} */
+
+
+
+
 
 .anim4 {
    opacity: 0;
@@ -77,15 +111,15 @@ a {
 }
 
 .big {
-   font-size: 1.3rem;
+   font-size: 1.5rem;
    text-transform: uppercase;
-   font-family: var(--font-big);     /* DO ZMIANY FONT */
+   font-family: 'Sofia Sans Semi Condensed', sans-serif;    /* DO ZMIANY FONT */
    transition: 0.3s;
 }
 
 .small {
    font-size: 1.1em;
-   font-family: var(--font-big);
+   font-family: 'Sofia Sans Semi Condensed', sans-serif;
    transition: 0.3s;
 }
 
@@ -107,12 +141,12 @@ a.small::before {
    bottom: 0;
    width: 0;
    height: 2px;
-   background-color: var(--color_third);
+   background-color: none;
    transition: width 0.25s ease-in-out;
 }
 
 a.small::before {
-   height: 1px;
+   height: 0px;
 }
 
 a.big:hover::before,
@@ -136,7 +170,7 @@ button.logo {
    font-size: 30px;
 }
 
-button.logo.active {
+button.logo.active {                         /* co to jest?? do usunięcia? */
    background: rgb(156, 154, 155);
    border: none;
    box-shadow: none;
@@ -162,6 +196,8 @@ button.logo.active {
    border-radius: 50px;
 }
 
+/* 3 linie menu*/
+
 .hamburger .line1,
 .hamburger .line2,
 .hamburger .line3 {
@@ -185,6 +221,8 @@ button.logo.active {
 .hamburger:hover {
    transition: 0.3s;
 }
+
+
 
 nav {
    position: fixed;
@@ -223,7 +261,7 @@ nav {
    left: 70%;
    width: 30%;
    height: 100vh;
-   background-color: #30521e;
+   background-color: #2c4925;
    color: #d7e0dd;
    display: flex;
    flex-direction: column;
@@ -446,7 +484,7 @@ h2 {
    background-color: rgba(223, 233, 231, .4);
 }
 
-.page2-sec1,
+.page2-sec1,     /* Moze wyrownac w grid?*/
 .page2-sec2,
 .page2-sec3,
 .page2-sec4 {
@@ -467,9 +505,9 @@ h2 {
 }
 
 .sec-h {
-   padding-bottom: 2em;
+   padding-bottom: 1em;
    font-size: 1.5em;
-   text-transform: uppercase;
+   /*text-transform: uppercase;*/
    color: var(--color_prime);
    transform: translateX(-60px);
    opacity: 0;
@@ -478,12 +516,22 @@ h2 {
 
 .sec-p {
    padding-bottom: 2em;
-   font-family: var(--main-font);
+   font-family: 'Sofia Sans Semi Condensed', sans-serif;
+   font-size: 16px;
    line-height: 1.4;
    color: var(--color_prime);
    transform: translateX(-60px);
    opacity: 0;
 }
+.te-r {
+ text-align: right;
+}
+
+.bold {
+   font-family: 'Sofia Sans Semi Condensed', sans-serif;
+   text-decoration: solid;
+}
+
 
 @keyframes move-move-texts {
    from {
@@ -505,24 +553,25 @@ h2 {
 .sec-btn {
    margin-left: auto;
    padding: 0.5em 1em;
-   opacity: 0;
+   /* opacity: 0;
    border: 3px solid var(--color_third);
    border-radius: 10px;
    background-color: transparent;
    box-shadow: 0 10px 20px -10px rgb(0 0 0 / 30%);
-   transition: .4s;
+   transition: .4s; */
 }
 
+/*  buttony od opisów na głównej
 .sec-btn:hover {
    border: 3px solid rgba(189, 254, 52, .5);
    background-color: #ffffff;
    box-shadow: none;
 }
+*/
 
-.sec-btn a {
+.seeMore a {
    font-family: var(--main-font);
-   font-size: .9em;
-   color: var(--color_prime);
+   color: #7a8c73 ;
 }
 
 @keyframes move-move-btn {
@@ -545,7 +594,7 @@ h2 {
    border-radius: 7px;
    border-right: 2px solid var(--color_third);
    border-bottom: 2px solid var(--color_third);
-   box-shadow: 30px 30px 30px -30px rgb(0 0 0 / 40%);
+   box-shadow: 30px 30px 30px -30px rgb(0 0 0 / 20%);
    transform: translateY(60px);
    margin-top: 4em;
    opacity: 0;
