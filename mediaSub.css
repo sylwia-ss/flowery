@@ -1,0 +1,184 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --color_second: #DFE9E7;
+   --color_third: #BDFE34;
+   --color_prime: #465B3B;
+   --color-hover: #939393;
+   --col-green-1: #91A088;
+   --col-green-light: #C0D4B9;
+   --font-big: 'Libre Baskerville', serif;
+   --font-sm: 'Merriweather', serif;
+   --font-logo: 'Cinzel Decorative', cursive;
+}
+
+body,
+html {
+   overflow-x: hidden;
+   position: relative;
+}
+
+@media screen and (max-width: 567px) {
+
+   .nav-main {
+      padding: 0 5%;
+   }
+
+   .nav-small {
+      left: 20%;
+      width: 100%;
+   }
+
+   .nav-small ul {
+      width: 20rem;
+   }
+
+   .nav-link {
+      padding: 3% 3% 6% 3%;
+   }
+
+   main {
+      padding: 0 5%;
+   }
+
+   .title-sec {
+      margin-top: 35%;
+      height: 50vh;
+   }
+
+   .intro {
+      width: 90%;
+   }
+
+   .intro-p {
+      font-size: 24px;
+      padding: 1.5em;
+   }
+
+   .text_page_about, .text_page_story, .text_page_theo {
+      padding: 30% 0;
+   }
+
+   .page_h {
+      font-size: 1.5em;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+   }
+
+   .page_p {
+      width: 100%;
+   }
+
+   .text-extra {
+      margin-bottom: 30%;
+   }
+
+   .extra-text {
+      font-size: 1.2em;
+   }
+
+   footer {
+      padding: 5em 3em 1.5em;
+   }
+
+   .part1 {
+      margin-bottom: 5em;
+   }
+
+   .bg-screen {
+      display: none;
+   }
+
+   .sm-screen {
+      display: block;
+   }
+
+   .map_box {
+      top: 0%;
+   }
+
+   .map_box .sm-screen {
+      border-radius: 10px;
+   }
+
+   .sign-box p {
+      font-size: 0.8em;
+   }
+
+}
+
+
+
+
+
+@media screen and (min-width: 567px) and (max-width: 768px) {
+
+   .nav-small {
+      left: 30%;
+      width: 90%;
+   }
+
+   .title-sec {
+      margin-top: 25%;
+      height: 60vh;
+   }
+
+   .intro {
+      width: 75%;
+   }
+
+   .page_h {
+      font-size: 1.5em;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+   }
+
+   .page_p {
+      width: 75%;
+   }
+
+   .extra-text {
+      font-size: 1.3em;
+   }
+
+   footer {
+      padding: 5em 10em 3em;
+   }
+
+   .part1 {
+      margin-bottom: 5em;
+   }
+
+}
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+   .title-sec {
+      margin-top: 30%;
+      height: 60vh;
+   }
+
+   .intro {
+      width: 70%;
+   }
+
+   .intro-p {
+      padding: 1.5em 2em;
+   }
+
+   footer {
+      padding: 5em 10em 3em;
+   }
+
+   .part1 {
+      margin-bottom: 5em;
+   }
+
+}
