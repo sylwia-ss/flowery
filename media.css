@@ -358,6 +358,11 @@ html {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
+   .nav-small {
+      left: 50%;
+      width: 50%;
+   }
+
    .page1 {
       padding: 25% 10% 0;
    }

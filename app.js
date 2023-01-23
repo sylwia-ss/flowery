@@ -2,12 +2,12 @@ setTimeout(() => {
 
    let anim = document.querySelector(".anim");
    let anim2 = document.querySelector(".anim2");
-   let anim3 = document.querySelector(".anim3");
+   //let anim3 = document.querySelector(".anim3");
    let anim4 = document.querySelector(".anim4");
 
    anim.style.animation = 'move-anim 1.5s ease-out forwards';
    anim2.style.animation = 'move-anim-2 2s ease-out forwards';
-   anim3.style.animation = 'move-anim-3 1.2s ease-out forwards';
+   //anim3.style.animation = 'move-anim-3 1.2s ease-out forwards';
    anim4.style.animation = 'move-anim-4 1.6s ease-out forwards'
 
 },1500)
@@ -89,37 +89,13 @@ changeNav = () => {
 changeNav();
 
 
-moveIntros = () => {
-   let textIntros = document.querySelectorAll(".move-intro");
-
-   textOptions = {
-      threshold: 1,
-      rootMargin: '0% 0% -5% 0%'
-   }
-
-   const introsObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(entry => {
-         if(entry.isIntersecting) {
-            entry.target.style.animation = `move-move-intro 1s ${entry.target.dataset.delay} forwards ease-out`;
-         } 
-      })
-   
-   }, textOptions);
-   
-   textIntros.forEach(text => {
-      introsObserver.observe(text)
-   })
-}
-
-moveIntros();
-
 
 moveTexts = () => {
    let texts = document.querySelectorAll(".move-text");
 
    textOptions = {
       threshold: 0.5,
-      rootMargin: '0% 0% -30% 0%'
+      rootMargin: '0% 0% -20% 0%'
    }
 
    const textObserver = new IntersectionObserver(function(entries) {
@@ -143,7 +119,7 @@ moveImgs = () => {
 
    imgOptions = {
       threshold: 0.5,
-      rootMargin: '0% 0% -30% 0%'
+      rootMargin: '0% 0% -25% 0%'
    }
 
    const imgObserver = new IntersectionObserver(function(entries) {
