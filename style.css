@@ -322,12 +322,14 @@ nav {
 main {
    height: 100%;
    width: 100%;
+   background: rgb(39,41,38);
+   background: linear-gradient(36deg, rgba(39,41,38,1) 0%, rgba(18,37,19,1) 35%, rgba(17,41,37,1) 72%, rgba(18,48,20,1) 100%);
 }
 
 .page1 {
    width: 100%;
    padding: 10% 5% 0;
-   background-color: #475a3c;;
+   /*background-color: #475a3c;*/
    position: relative;
 }
 
@@ -342,8 +344,14 @@ main {
 }
 
 .title-sec {
-   display: flex;
-   flex-direction: column;
+   margin-top: 5%;
+   margin-bottom: 40%;
+   margin-left: 15%;
+   font-family: var(--font-title);
+   color: #e5e5e5;
+   text-shadow: 2px 2px 3px #054005;
+   letter-spacing: 4px;
+   word-spacing: 4px;
 }
 
 /*.h1-part1 {
@@ -374,17 +382,15 @@ main {
    }
 }*/
 
-h1 {
-   font-family: var(--font-title);
-   text-align: center;
-   font-size: 5.5em;
-   color: #e5e5e5;
-   text-shadow: 2px 2px 3px #054005;
+.h1-lg {
+   font-size: 3.5em;
    /*color: var(--col-breakfast-text);*/
-   letter-spacing: 4px;
-   word-spacing: 4px;
-   transform: translateY(-70px);
+   /*transform: translateY(-70px);*/
    /*padding: 0 10% 2em;*/
+}
+
+.h1-sm {
+   font-size: 0.7em;
 }
 
 /*.h1-1 {
@@ -422,19 +428,15 @@ h1 {
 }*/
 
 .hero-img-box {
-   width: 25%;
-   margin-bottom: 3em;
-}
-
-.hero-img-box-1 {
-   transform: rotate(-30deg);
-   opacity: 0.3;
+   width: 55%;
+   /* margin-bottom: 3em; */
+   position: absolute;
+   top: 10%;
 }
 
 .hero-img-box-2 {
-   transform: rotate(150deg) translateY(70px);
-   margin-left: auto;
-   opacity: 0.3;
+   margin-left: 55%;
+   /*opacity: 0.3;*/
 }
 
 .hero {
@@ -447,7 +449,9 @@ h1 {
 }
 
 .intro_text {
-   font-size: 1.7em;
+   display: flex;
+   flex-direction: column;
+   font-size: 2em;
    font-family: var(--font3);
    color: #e5e5e5;
    /*color: var(--color_prime);*/
@@ -492,16 +496,22 @@ h1 {
 
 .page2 {
    padding: 15% 15% 5%;
-   background-color: #384630;
+   /*background-color: #384630;*/
    position: relative;
 }
 
 .img-bg {
    position: absolute;
-   top: 10%;
-   left: 0;
-   width: 120%;
-   opacity: 0.1;
+   top: 0;
+   left: -30%;
+   width: 50%;
+}
+
+.img-bg-2 {
+   position: absolute;
+   bottom: 0;
+   right: -30%;
+   width: 50%;
 }
 
 .page2-sec1,     /* Moze wyrownac w grid?*/
