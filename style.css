@@ -323,8 +323,9 @@ nav {
 main {
    height: 100%;
    width: 100%;
-   background: rgb(39,41,38);
-   background: linear-gradient(36deg, rgba(39,41,38,1) 0%, rgba(18,37,19,1) 35%, rgba(17,41,37,1) 72%, rgba(18,48,20,1) 100%);
+   background-color: rgb(101 123 91);
+   /*background: rgb(39,41,38);
+   background: linear-gradient(36deg, rgba(39,41,38,1) 0%, rgba(18,37,19,1) 35%, rgba(17,41,37,1) 72%, rgba(18,48,20,1) 100%);*/
 }
 
 .page1 {
