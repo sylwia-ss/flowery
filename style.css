@@ -344,10 +344,15 @@ main {
    display: none;
 }
 
+.img-circles-box {
+   position: absolute;
+   top: 5%;
+}
+
 .title-sec {
-   margin-top: 5%;
-   margin-bottom: 40%;
-   margin-left: 15%;
+   margin-top: 10%;
+   margin-bottom: 30%;
+   margin-left: 10%;
    font-family: var(--font-title);
    color: #e5e5e5;
    text-shadow: 2px 2px 3px #054005;
@@ -458,7 +463,7 @@ main {
    /*color: var(--color_prime);*/
    width: 100%;
    margin-left: auto;
-   padding: 0 0 7% 10%;
+   padding: 0 7% 7% 10%;
 }
 
 .intro_p {
