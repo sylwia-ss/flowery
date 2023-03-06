@@ -473,11 +473,6 @@ main {
    align-items: center;
 }
 
-.flower-sm {
-   width: 3%;
-   margin-right: 0.5em;
-}
-
 /*.intro_p1 {
    padding-left: 5%;
 }
@@ -501,7 +496,9 @@ main {
    font-weight: 600;
 }
 
-.page2 {
+.page2,
+.page3,
+.page4 {
    padding: 15% 10% 5%;
    /*background-color: #384630;*/
    position: relative;
@@ -531,11 +528,15 @@ main {
 
 .page2-sec1,     /* Moze wyrownac w grid?*/
 .page2-sec2,
-.page2-sec3,
-.page2-sec4 {
+.page2-sec3 {
    display: flex;
    justify-content: space-evenly;
    margin-bottom: 20%;
+   height: 20em;
+}
+
+.page2-sec3 {
+   margin-bottom: 7%;
 }
 
 .page2-sec4 {
@@ -547,9 +548,10 @@ main {
 .page2-sec3-text,
 .page2-sec4-text {
    width: 45%;
-   background-color: #10260e;
+   background-color: #425d40;
    padding: 1em;
    z-index: 2;
+   border-radius: 7px;
    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -559,8 +561,6 @@ main {
    /*text-transform: uppercase;*/
    /*color: var(--color_prime);*/
    color: #ffffff;
-   transform: translateX(-60px);
-   opacity: 0;
    font-family: var(--font-title);
 }
 
@@ -571,8 +571,6 @@ main {
    line-height: 1.4;
    /*color: var(--color_prime);*/
    color: #e5e5e5;
-   transform: translateX(-60px);
-   opacity: 0;
 }
 
 .seeMore a {
@@ -596,18 +594,6 @@ main {
 .bold {
    font-family: 'Sofia Sans Semi Condensed', sans-serif;
    text-decoration: solid;
-}
-
-
-@keyframes move-move-texts {
-   from {
-      transform: translateX(-60px);
-      opacity: 0;
-   }
-   to {
-      transform: translateX(0);
-      opacity: 1;
-   }
 }
 
 .sec-ctn {
@@ -651,6 +637,7 @@ main {
 
 .sec-img-box {
    width: 45%;
+   height: 100%;
    display: flex;
    align-self: center;
    z-index: 2;
@@ -682,6 +669,101 @@ main {
       opacity: 1;
    }
 }
+
+.page3 {
+   display: flex;
+   flex-direction: column;
+}
+
+.page3-text {
+   text-align: center;
+}
+
+.sub-boxes-h {
+   padding-bottom: 1em;
+   font-size: 2.5em;
+   /*text-transform: uppercase;*/
+   /*color: var(--color_prime);*/
+   color: #ffffff;
+   font-family: var(--font-title);
+}
+
+.sub-boxes-p {
+   padding-bottom: 3em;
+   font-family: 'Arapey', serif;
+   font-size: 1.5em;
+   line-height: 1.4;
+   /*color: var(--color_prime);*/
+   color: #e5e5e5;
+   width: 70%;
+   margin: 0 auto;
+}
+
+.page3-boxes {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.page3-box {
+   width: 15em;
+   border: 1px solid #e5e5e5;
+   background-color: #425d40;
+   height: 20em;
+   margin-bottom: 2em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 7px;
+   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.page3-box-p {
+   font-family: 'Arapey', serif;
+   color: #e5e5e5;
+   text-align: center;
+   font-size: 1.5em;
+   padding: 1em;
+}
+
+.page4-h {
+   padding-bottom: 1em;
+   font-size: 2.5em;
+   /*text-transform: uppercase;*/
+   /*color: var(--color_prime);*/
+   color: #e5e5e5;
+   font-family: var(--font-title);
+   text-align: center;
+}
+
+.card-reviews {
+   width: 75%;
+   display: flex;
+   justify-content: space-evenly;
+   margin: 0 auto;
+}
+
+.btn-prev,
+.btn-next {
+   background: transparent;
+   box-shadow: none;
+   border: none;
+}
+
+.card-body {
+   width: 70%;
+   border: 1px solid #e5e5e5;
+   padding: 1em;
+   border-radius: 7px;
+   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+   background-color: #425d40;
+   color: #e5e5e5;
+   font-family: 'Arapey', serif;
+   line-height: 1.4;
+   font-size: 1.1em;
+   text-align: center;
+}
+
 
 footer {
    background-color: #2d3827;

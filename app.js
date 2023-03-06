@@ -191,3 +191,60 @@ movePs2 = () => {
 }
 
 movePs2();
+
+mumReviews = () => {
+
+   const reviews = [
+      {
+         id: 1,
+         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officiis quod magni aut libero iure pariatur, unde nemo tempora, hic, eligendi corporis? Recusandae esse illo voluptatum commodi impedit iure accusantium voluptate beatae illum.",
+      },
+      {
+         id: 2,
+         text: "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis.",
+      },
+      {
+         id: 3,
+         text: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt ab illo inventore veritatis et quasi.!",
+      },
+      {
+         id: 4,
+         text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      }
+   ];
+   
+   //const person = document.getElementById("author");
+   //const review = document.getElementById("info");
+   const prevBtn = document.querySelector(".btn-prev");
+   const nextBtn = document.querySelector(".btn-next");
+   
+   let currentItem = 0;
+   
+   window.addEventListener('DOMContentLoaded', function () {
+      showPerson(currentItem);
+   });
+   
+   function showPerson() {
+      const item = reviews[currentItem];
+      //author.textContent = item.author;
+      info.textContent = item.text;
+   }
+   
+   nextBtn.addEventListener('click', function() {
+      currentItem++;
+      if(currentItem > reviews.length - 1){
+         currentItem = 0;
+      }
+      showPerson(currentItem);
+   });
+   
+   prevBtn.addEventListener('click', function() {
+      currentItem--;
+      if(currentItem < 0){
+         currentItem = reviews.length - 1;
+      }
+      showPerson(currentItem);
+   });
+}
+
+mumReviews();
