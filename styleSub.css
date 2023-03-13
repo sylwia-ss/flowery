@@ -359,7 +359,8 @@ main {
    margin-left: auto;
 }
 
-.page_h {
+.page_h,
+.list-h {
    font-family: var(--font-title);
    font-size: 2em;
    color: var(--color_prime);
@@ -379,7 +380,10 @@ main {
 }*/
 
 .page_p,
-.page_p_sub {
+.page_p_sub,
+.list,
+.topic-sum,
+.summary {
    font-family: 'Arapey', serif;
    line-height: 1.8;
    width: 70ch;
@@ -413,12 +417,47 @@ main {
    padding-right: 1em;
 }
 
+.page_p-theo {
+   margin-bottom: 4em;
+}
+
+.elem-h,
+.elem-h-theo {
+   font-family: var(--font-title);
+   color: var(--color_prime);
+   font-size: 1.3em;
+}
+
 .elem-1 {
    padding-right: 1em;
 }
 
-.elem-3 {
+.elem-4 {
    font-weight: 500;
+}
+
+.fa-1 {
+   transform: rotate(10deg);
+   margin-right: .7em;
+   color: #78a813;
+}
+
+.fa-2 {
+   transform: rotate(75deg);
+   margin-right: .7em;
+   color: #78a813;
+}
+
+.fa-3 {
+   transform: rotate(130deg);
+   margin-right: .7em;
+   color: #78a813;
+}
+
+.fa-4 {
+   transform: rotate(195deg);
+   margin-right: .7em;
+   color: #78a813;
 }
 
 .fa-circle {
@@ -446,23 +485,22 @@ main {
    }
 }
 
-.text-extra {
-   padding: 7% 10% 7%;
-   background-color: rgba(223, 233, 231, .3);
-   margin-bottom: 15%;
-   box-shadow: 30px 30px 30px -30px rgb(0 0 0 / 40%);
-   border-radius: 10px;
-   border-right: 2px solid var(--color_third);
-   border-bottom: 2px solid var(--color_third);
+.list {
+   margin-top: 10%;
+   margin-bottom: 5%;
 }
 
-.extra-text {
-   font-size: 2em;
-   font-family: var(--main-font);
-   width: 90%;
-   color: var(--color_prime);
+.list-h {
+   margin-bottom: 5%;
 }
 
+.number {
+   margin-right: .3em;
+}
+
+.summary {
+   font-size: 1.5em;
+}
 
 footer {
    background-color: #2d3827;

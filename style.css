@@ -464,7 +464,7 @@ main {
    /*color: var(--color_prime);*/
    width: 100%;
    margin-left: auto;
-   padding: 0 7% 7% 10%;
+   padding: 0 7% 7% 7%;
 }
 
 .intro_p {
@@ -494,6 +494,30 @@ main {
    font-family: var(--main-font);
    color: var(--color_prime);
    font-weight: 600;
+}
+
+.fa-circle-notch {
+   margin-right: .7em;
+}
+
+.fa-1 {
+   transform: rotate(10deg);
+}
+
+.fa-2 {
+   transform: rotate(75deg);
+}
+
+.fa-3 {
+   transform: rotate(130deg);
+}
+
+.fa-4 {
+   transform: rotate(195deg);
+}
+
+.fa-5 {
+   transform: rotate(260deg);
 }
 
 .page2,
