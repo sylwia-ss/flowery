@@ -1,29 +1,14 @@
-setTimeout(() => {
+/*setTimeout(() => {
 
    let anim = document.querySelector(".anim");
    let anim2 = document.querySelector(".anim2");
-   //let anim3 = document.querySelector(".anim3");
    let anim4 = document.querySelector(".anim4");
 
    anim.style.animation = 'move-anim 1.5s ease-out forwards';
    anim2.style.animation = 'move-anim-2 2s ease-out forwards';
-   //anim3.style.animation = 'move-anim-3 1.2s ease-out forwards';
    anim4.style.animation = 'move-anim-4 1.6s ease-out forwards'
 
-},1500)
-
-
-//loadAnims = () => {
-   //let anim = document.querySelectorAll(".anim");
-   //let anim2 = document.querySelector(".anim2");
-
-   //anim.forEach(anim => {
-      //anim.style.animation = `move-anim .3s ${anim.dataset.delay} ease-out forwards`;
-   //});
-   //anim2.style.animation = 'move-anim-2 .2 ease-out .6';
-//}
-
-//loadAnims();
+},1500)*/
 
 let hamburger = document.querySelector('.hamburger');
 let nav = document.querySelector('.nav');
@@ -63,21 +48,21 @@ hamburger.addEventListener('click', navEventListener);
 navBig.addEventListener('click', navEventListener);
 
 
-changeNav = () => {
+/*changeNav = () => {
    let navMain = document.querySelector(".nav-main");
    let titleSec = document.querySelector(".title-sec");
    
    navOptions = {
-      threshold: 0.5,
+      threshold: 0,
       rootMargin: '20% 0% 0% 0%'
    }
 
-   const navObserver = new IntersectionObserver(function(entries) {
+   const navObserver = new IntersectionObserver(function(entries,IntersectionObserver) {
       entries.forEach(entry => {
          if(!entry.isIntersecting) {
-            navMain.classList.add('scrolled')
+            navMain.classList.add('nav-main-scrolled')
          } else {
-            navMain.classList.remove('scrolled');
+            navMain.classList.remove('nav-main-scrolled');
          }
       })
    
@@ -86,7 +71,7 @@ changeNav = () => {
    navObserver.observe(titleSec);
 }
 
-changeNav();
+changeNav();*/
 
 
 
@@ -164,7 +149,7 @@ moveBtns = () => {
 
 moveBtns();
 
-movePs2 = () => {
+/*movePs2 = () => {
    let ps = document.querySelectorAll(".move-page_p");
 
    textOptions = {
@@ -190,7 +175,7 @@ movePs2 = () => {
    })
 }
 
-movePs2();
+movePs2();*/
 
 mumReviews = () => {
 

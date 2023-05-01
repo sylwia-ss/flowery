@@ -47,7 +47,7 @@ html {
 
    .title-sec {
       margin-top: 35%;
-      height: 50vh;
+      height: 30vh;
    }
 
    .intro {
@@ -69,8 +69,12 @@ html {
       word-spacing: 2px;
    }
 
-   .page_p {
-      width: 100%;
+   .page_p, 
+   .page_p_sub, 
+   .list, 
+   .topic-sum, 
+   .summary {
+      width: 90%;
    }
 
    .text-extra {
@@ -124,7 +128,11 @@ html {
 
    .title-sec {
       margin-top: 25%;
-      height: 60vh;
+      height: 30vh;
+   }
+
+   .story {
+      background-position: top;
    }
 
    .intro {
@@ -137,12 +145,15 @@ html {
       word-spacing: 2px;
    }
 
-   .page_p {
+   .page_p,
+   .list,
+   .topic-sum, 
+   .summary {
       width: 75%;
    }
 
-   .extra-text {
-      font-size: 1.3em;
+   .list {
+      width: 75%;
    }
 
    footer {
@@ -160,9 +171,34 @@ html {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
+   .nav-small {
+      left: 50%;
+      width: 50%;
+   }
+
    .title-sec {
       margin-top: 30%;
-      height: 60vh;
+      height: 30vh;
+   }
+
+   .story {
+      background-position: top;
+   }
+
+   .img-bg {
+      left: -35%;
+   }
+
+   .img-bg-2 {
+      left: -65%;
+   }
+
+   .img-bg-3 {
+      right: -55%;
+   }
+
+   .img-bg-4 {
+      right: -40%;
    }
 
    .intro {
@@ -171,6 +207,17 @@ html {
 
    .intro-p {
       padding: 1.5em 2em;
+   }
+
+   .text_page_about, 
+   .text_page_story, 
+   .text_page_theo {
+      width: 70%;
+      margin: 0 auto;
+   }
+
+   .page_p_sub {
+      width: 100%;
    }
 
    footer {

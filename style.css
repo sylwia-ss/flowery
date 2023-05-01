@@ -34,7 +34,6 @@
    transition: .2s;
 }
 
-
 .nav a:link {
    color: #d7e0dd;
    text-decoration:none;
@@ -57,51 +56,6 @@ nav a:visited {
    color: #e8f2ef;
    text-decoration:none;
 }
-
-
-
-/*main a:link, footer a:link {
-   color: #7a8c73;
-   text-decoration:none;
-}
- 
-main a:visited, footer a:visited {
-   color: #7a8c73;
-   text-decoration:none;
-}
- 
-main a:hover, footer a:hover {
-   color: #323e2d;
-   text-decoration:none;
-}
- 
-main a:active, footer a:active {
-   color: #5b6a55;
-   text-decoration:none;
-}
-
-nie ma juz buttonow
-.nav-main.scrolled {
-   background-color: #f6f8f8;
-   box-shadow: 10px 0 20px rgb(99 99 99 / 20%);
-} */
-
-
-
-
-
-/*.anim4 {
-   opacity: 0;
-}
-
-@keyframes move-anim-4 {
-   from {
-      opacity: 0;
-   }
-   to {
-      opacity: 1;
-   }
-}*/
 
 a {
    text-decoration: none;
@@ -130,51 +84,17 @@ a.small {
    padding-bottom: .1em;
 }
 
-/*a.big::before,
-a.small::before {
-   content: "";
-   position: absolute;
-   left: 0;
-   bottom: 0;
-   width: 0;
-   height: 2px;
-   background-color: none;
-   transition: width 0.25s ease-in-out;
-}
-
-a.small::before {
-   height: 0px;
-}
-
-a.big:hover::before,
-a.small:hover::before {
-   width: 100%;
-}*/
-
 button.logo {
    font-family: 'Licorice', cursive;
    font-size: 30px;
    color:  #323e2d;
    text-shadow: 1px 1px 1px #d5d5d5;;
-   /*color: #E45545;*/
    padding: 5% 15%;
    position: relative;
    border: none;
    background: transparent;
    cursor: pointer;
 }
-
-/*.letter {
-   text-shadow: 1px 1px 1px var(--color_third);
-   font-size: 30px;
-}*/
-
-
-/*button.logo.active {                         /* co to jest?? do usunięcia? 
-   background: rgb(156, 154, 155);
-   border: none;
-   box-shadow: none;
-}*/
 
 .hamburger {
    width: 4rem;
@@ -324,15 +244,11 @@ main {
    height: 100%;
    width: 100%;
    background-color: #557b44;
-   /*background-color: rgb(101 123 91);*/
-   /*background: rgb(39,41,38);
-   background: linear-gradient(36deg, rgba(39,41,38,1) 0%, rgba(18,37,19,1) 35%, rgba(17,41,37,1) 72%, rgba(18,48,20,1) 100%);*/
 }
 
 .page1 {
    width: 100%;
    padding: 10% 5% 0;
-   /*background-color: #475a3c;*/
    position: relative;
 }
 
@@ -362,98 +278,29 @@ main {
    word-spacing: 4px;
 }
 
-/*.h1-part1 {
-   display: flex;
-   transform: translateY(250px);
-   margin-bottom: 1.2em;
-}
-.h1-part2 {
-   transform: translateY(100px);
-   margin-bottom: 4em;
-}
-
-@keyframes move-anim {
-   from {
-      transform: translateY(250px);
-   }
-   to {
-      transform: translateY(0px);
-   }
-}
-
-@keyframes move-anim-2 {
-   from {
-      transform: translateY(100px);
-   }
-   to {
-      transform: translateY(0px);
-   }
-}*/
-
 .h1-lg {
    font-size: 3.5em;
-   /*color: var(--col-breakfast-text);*/
-   /*transform: translateY(-70px);*/
-   /*padding: 0 10% 2em;*/
 }
 
 .h1-sm {
    font-size: 0.7em;
 }
 
-/*.h1-1 {
-   padding-right: .5em;
-}
-
-.h1-2 {
-   padding-left: .5em;
-}
-
-.h1-3 {
-   font-size: 3em;
-}*/
-
-
-/*h2 {
-   font-size: 2em;
-   font-family: var(--font-big);
-   padding-bottom: 20%;
-   color: #3e632a;
-   transform: translateY(-60px);
-}
-
-.page2 h3 {
-   font-family: 'Libre Baskerville', serif;
-}
-
-@keyframes move-anim-3 {
-   from {
-      transform: translateY(-60px);
-   }
-   to {
-      transform: translateY(0px);
-   }
-}*/
-
 .hero-img-box {
    width: 55%;
    /* margin-bottom: 3em; */
    position: absolute;
    top: 10%;
+   margin-left: 55%;
 }
 
-.hero-img-box-2 {
-   margin-left: 55%;
-   /*opacity: 0.3;*/
-}
+/*.hero-img-box-2 {
+   
+}*/
 
 .hero {
    width: 100%;
    background-position: right;
-   /*border-radius: 10px;
-   border-right: 2px solid var(--color_third);
-   border-bottom: 2px solid var(--color_third);
-   box-shadow: 30px 30px 30px -30px rgb(0 0 0 / 40%);*/
 }
 
 .intro_text {
@@ -473,22 +320,6 @@ main {
    display: flex;
    align-items: center;
 }
-
-/*.intro_p1 {
-   padding-left: 5%;
-}
-
-.intro_p2 {
-   padding-left: 10%;
-}
-
-.intro_p3 {
-   padding-left: 15%;
-}
-
-.intro_p4 {
-   padding-left: 20%;
-}*/
 
 .intro_text_inner {
    font-size: 1.2em;
@@ -556,10 +387,11 @@ main {
 .page2-sec1,     /* Moze wyrownac w grid?*/
 .page2-sec2,
 .page2-sec3 {
-   display: flex;
-   justify-content: space-evenly;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2em;
    margin-bottom: 20%;
-   height: 20em;
+   /*height: 20em;*/
 }
 
 .page2-sec3 {
@@ -574,7 +406,7 @@ main {
 .page2-sec2-text,
 .page2-sec3-text,
 .page2-sec4-text {
-   width: 45%;
+   width: 100%;
    background-color: rgb(80 119 63);
    padding: 1em;
    z-index: 2;
@@ -663,10 +495,10 @@ main {
 }
 
 .sec-img-box {
-   width: 45%;
-   height: 100%;
-   display: flex;
-   align-self: center;
+   width: 100%;
+   /*height: 100%;*/
+   /*display: flex;*/
+   /*align-self: center;*/
    z-index: 2;
 }
 

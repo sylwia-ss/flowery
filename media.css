@@ -367,30 +367,40 @@ html {
       padding: 25% 10% 0;
    }
 
-   h2 {
-      padding: 0 10% 20%;
-      transform: translateY(-130px);
+   .img-circles-box {
+      top: 15%;
    }
 
-   @keyframes move-anim-3 {
-      from {
-         transform: translateY(-130px);
-      }
-      to {
-         transform: translateY(0px);
-      }
+   .circles {
+      width: 80%;
+   }
+
+   .title-sec {
+      margin-top: 15%;
+      margin-bottom: 20%;
+   }
+
+   .h1-lg {
+      font-size: 3em;
+   }
+
+   .hero-img-box {
+      margin-left: 55%;
+      top: 5%;
    }
 
    .intro_text {
-      padding: 15% 0 7% 10%;
+      padding: 10% 0 7% 10%;
    }
 
-   .intro_p1,
-   .intro_p2,
-   .intro_p3,
-   .intro_p4 {
-      padding-left: 0;
+   .sec-h {
+      padding-bottom: 1em;
+      font-size: 2em;
    }
+
+   /*.page3-box {
+      width: 24em;
+   }*/
 
    footer {
       padding: 5em 10em 3em;
