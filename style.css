@@ -428,7 +428,7 @@ main {
 }
 
 .sec-p {
-   padding-bottom: 2em;
+   padding-bottom: 1em;
    font-family: 'Arapey', serif;
    font-size: 1.1em;
    line-height: 1.4;
@@ -444,6 +444,8 @@ main {
    padding-left: 0.5em;
    transform: scale(1);
    transition: all 0.5s;
+   width: 100%;
+   text-align: end;
 }
 
 .seeMore a:hover {
@@ -504,6 +506,29 @@ main {
    /*display: flex;*/
    /*align-self: center;*/
    z-index: 2;
+   height: 20em;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+   height: 100%;
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.box-1 {
+   background-image: url(./imgs/cid18.JPG);
+}
+
+.box-2 {
+   background-image: url(./imgs/cid12c.JPG);
+}
+
+.box-3 {
+   background-image: url(./imgs/cid133.JPG);
+   background-position: top;
 }
 
 .sec-img {
