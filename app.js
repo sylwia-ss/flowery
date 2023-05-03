@@ -1,15 +1,3 @@
-/*setTimeout(() => {
-
-   let anim = document.querySelector(".anim");
-   let anim2 = document.querySelector(".anim2");
-   let anim4 = document.querySelector(".anim4");
-
-   anim.style.animation = 'move-anim 1.5s ease-out forwards';
-   anim2.style.animation = 'move-anim-2 2s ease-out forwards';
-   anim4.style.animation = 'move-anim-4 1.6s ease-out forwards'
-
-},1500)*/
-
 let hamburger = document.querySelector('.hamburger');
 let nav = document.querySelector('.nav');
 let navBig = document.querySelector('.nav-big');
@@ -46,34 +34,6 @@ let navEventListener = function() {
 
 hamburger.addEventListener('click', navEventListener);
 navBig.addEventListener('click', navEventListener);
-
-
-/*changeNav = () => {
-   let navMain = document.querySelector(".nav-main");
-   let titleSec = document.querySelector(".title-sec");
-   
-   navOptions = {
-      threshold: 0,
-      rootMargin: '20% 0% 0% 0%'
-   }
-
-   const navObserver = new IntersectionObserver(function(entries,IntersectionObserver) {
-      entries.forEach(entry => {
-         if(!entry.isIntersecting) {
-            navMain.classList.add('nav-main-scrolled')
-         } else {
-            navMain.classList.remove('nav-main-scrolled');
-         }
-      })
-   
-   }, navOptions);
-   
-   navObserver.observe(titleSec);
-}
-
-changeNav();*/
-
-
 
 moveTexts = () => {
    let texts = document.querySelectorAll(".move-text");
@@ -149,33 +109,6 @@ moveBtns = () => {
 
 moveBtns();
 
-/*movePs2 = () => {
-   let ps = document.querySelectorAll(".move-page_p");
-
-   textOptions = {
-      threshold: 0.5,
-      rootMargin: '0% 0% -10% 0%'
-   }
-
-   const textObserver = new IntersectionObserver(function(items) {
-      items.forEach(item => {
-         console.log(items);
-         if(item.intersectionRatio > 0) {
-            item.target.style.animation = `move-text-2 1s forwards ease`;
-         }
-         else {
-            item.target.style.animation = 'none';
-         }
-      })
-   
-   }, textOptions);
-   
-   ps.forEach(p => {
-      textObserver.observe(p)
-   })
-}
-
-movePs2();*/
 
 mumReviews = () => {
 

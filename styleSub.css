@@ -48,31 +48,6 @@ nav a:visited {
    color: #9aa9a4;
    text-decoration:none;
 }
- 
-/*.nav a:active {
-   color: #e8f2ef;
-   text-decoration:none;
-}
-
-main a:link, footer a:link {
-   color: #7a8c73;
-   text-decoration:none;
-}
- 
-main a:visited, footer a:visited {
-   color: #7a8c73;
-   text-decoration:none;
-}
-
-main a:hover, footer a:hover {
-   color: #323e2d;
-   text-decoration:none;
-}
- 
-main a:active, footer a:active {
-   color: #5b6a55;
-   text-decoration:none;
-}*/
 
 a {
    text-decoration: none;
@@ -106,7 +81,6 @@ button.logo {
    font-size: 30px;
    color:  #323e2d;
    text-shadow: 1px 1px 1px #78a813;
-   /*color: #E45545;*/
    padding: 5% 15%;
    position: relative;
    border: none;
@@ -306,7 +280,6 @@ main {
    position: absolute;
    top: 0%;
    left: -22%;
-   /* opacity: 0.1; */
    width: 30%;
    transform: rotate(-16deg);
    z-index: -1;
@@ -315,7 +288,6 @@ main {
 .img-bg-2 {
    position: absolute;
    bottom: 5%;
-   /* opacity: 0.1; */
    left: -50%;
    width: 70%;
    transform: rotate(120deg);
@@ -325,7 +297,6 @@ main {
 .img-bg-3 {
    position: absolute;
    top: 25%;
-   /* opacity: 0.1; */
    right: -45%;
    width: 70%;
    transform: rotate(120deg);
@@ -335,24 +306,11 @@ main {
 .img-bg-4 {
    position: absolute;
    bottom: 25%;
-   /* opacity: 0.1; */
    right: -25%;
    width: 40%;
    transform: rotate(120deg);
    z-index: -1;
 }
-
-/*.text_page_story .img-bg {
-   position: absolute;
-   top: 10%;
-   left: -20%;
-   opacity: 0.1;
-   width: 200%;
-}*/
-
-/*.text_page_story .img-bg-2 {
-   display: none;
-}*/
 
 .text_page_about,
 .text_page_theo {
@@ -373,15 +331,6 @@ main {
    letter-spacing: 1px;
    word-spacing: 3px;
 }
-
-/*.text_page_about .page_h,
-.text_page_theo .page_h {
-   text-align: left;
-}
-
-.text_page_story .page_h {
-   text-align: right;
-}*/
 
 .page_p,
 .page_p_sub,
@@ -472,25 +421,6 @@ main {
    color: #323e2d;
    font-size: .7em;
    padding-right: 1em;
-}
-
-/*.text_page_about .page_p {
-   text-align: left;
-}
-
-.text_page_story .page_p {
-   text-align: right;
-}*/
-
-@keyframes move-text-2 {
-   from {
-      transform: translateX(-50%);
-      opacity: 0;
-   }
-   to {
-      transform: translateX(0);
-      opacity: 1;
-   }
 }
 
 .list {
